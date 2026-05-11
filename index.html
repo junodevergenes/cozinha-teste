@@ -113,7 +113,7 @@
               class="cg-carousel-btn cg-carousel-prev"
               aria-label="Anterior"
             >
-              <i class="ri-arrow-left-s-line"></i>
+              <img src="/svg/seta-esq.svg" alt="" aria-hidden="true" />
             </button>
 
             <div class="cg-carousel-viewport">
@@ -217,7 +217,7 @@
               class="cg-carousel-btn cg-carousel-next"
               aria-label="Próximo"
             >
-              <i class="ri-arrow-right-s-line"></i>
+              <img src="/svg/seta-dir.svg" alt="" aria-hidden="true" />
             </button>
           </div>
 
@@ -564,6 +564,55 @@
           document.addEventListener("DOMContentLoaded", initParallax);
         } else {
           requestAnimationFrame(initParallax);
+        }
+      })();
+    </script>
+    <script>
+      (function () {
+        function initHeroParallax() {
+          if (
+            typeof gsap === "undefined" ||
+            typeof ScrollTrigger === "undefined"
+          )
+            return;
+          gsap.registerPlugin(ScrollTrigger);
+
+          const hero = document.querySelector(".cg-hero");
+          const wrapper = document.querySelector(".cg-main-wrapper");
+          if (!hero) return;
+
+          /* Clipa o overflow do scale via JS (não toca no CSS) */
+          if (wrapper) wrapper.style.overflow = "hidden";
+
+          /* ── Breathing: scale no próprio div — arrasta o bg junto ──
+         .cg-hero não tem filhos, então scale só afeta o background  */
+          gsap.to(hero, {
+            scale: 1.06,
+            duration: 5,
+            ease: "sine.inOut",
+            yoyo: true /* vai e volta suavemente      */,
+            repeat: -1 /* loop infinito               */,
+            transformOrigin: "center center",
+          });
+
+          /* ── Parallax no scroll: background desce mais devagar ──
+         Parte de center (50%) e vai até 65% enquanto a seção sai  */
+          gsap.to(hero, {
+            backgroundPositionY: "65%",
+            ease: "none",
+            scrollTrigger: {
+              trigger: hero,
+              start: "top top",
+              end: "bottom top",
+              scrub: 1.5 /* leve lag para sensação física */,
+            },
+          });
+        }
+
+        if (document.readyState === "loading") {
+          document.addEventListener("DOMContentLoaded", initHeroParallax);
+        } else {
+          requestAnimationFrame(initHeroParallax);
         }
       })();
     </script>
