@@ -1,0 +1,605 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cozinha Globo – O ingrediente que conecta gerações</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- ═══════════════════════════════════════
+         HEADER
+    ═══════════════════════════════════════ -->
+    <header class="bg-laranja row flex-center align-center">
+      <!-- Logo -->
+      <div class="cg-logo-header">
+        <img src="/svg/logotipo-globo-header.svg" alt="Cozinha Globo" />
+      </div>
+
+      <!-- Nav desktop -->
+      <nav class="menu col-4 col-8 col-8 row">
+        <ul class="row flex-center gap-4">
+          <a href="/produtos">Produtos</a>
+          <a href="/receitas">Receitas</a>
+          <a href="/onde-comprar">Onde Comprar</a>
+          <a href="/contato">Contato</a>
+          <a href="/clube">Clube</a>
+          <a href="/livros">Livros</a>
+          <a href="/trabalhe-conosco">Trabalhe Conosco</a>
+        </ul>
+      </nav>
+
+      <!-- Ícones sociais desktop -->
+      <div class="social-icons row col-2 col-2 col-2">
+        <a
+          href="https://www.facebook.com/cozinhaglobo"
+          target="_blank"
+          aria-label="Facebook"
+        >
+          <i class="ri-facebook-circle-fill"></i>
+        </a>
+        <a
+          href="https://www.instagram.com/cozinhaglobo/"
+          target="_blank"
+          aria-label="Instagram"
+        >
+          <i class="ri-instagram-fill"></i>
+        </a>
+        <a
+          href="https://www.youtube.com/@cozinha_globo"
+          target="_blank"
+          aria-label="YouTube"
+        >
+          <i class="ri-youtube-fill"></i>
+        </a>
+        <a
+          href="https://www.tiktok.com/@cozinhaglobo"
+          target="_blank"
+          aria-label="TikTok"
+        >
+          <i class="ri-tiktok-fill"></i>
+        </a>
+      </div>
+
+      <!-- Botão hamburguer -->
+      <button class="ham" aria-label="Abrir menu" aria-expanded="false">
+        <i class="ri-menu-line"></i>
+      </button>
+    </header>
+
+    <main>
+      <!-- ═══════════════════════════════════════════════════════
+     HERO
+═══════════════════════════════════════════════════════ -->
+      <section class="cg-main-wrapper row column flex-center align-center">
+        <div class="cg-hero receitas"></div>
+        <div
+          class="produtos-container row column col-4 col-6 col-8 flex-center align-center"
+        >
+          <div class="produtos-box row flex-center align-center">
+            <div class="text-box-center row column col-4 col-6 col-8">
+              <h2>
+                Tem dia que pede receita<br />
+                <span style="font-weight: normal"
+                  >E tem receita que transforma o dia</span
+                >
+              </h2>
+              <h4>
+                Explore receitas que encantam e fazem parte da cozinha
+                brasileira. Das mais fáceis, práticas até as mais completas e
+                cheias de sabor.
+              </h4>
+            </div>
+            <!-- Barra de busca com filtros — Cozinha Globo -->
+            <div class="cg-search-bar">
+              <!-- Linha 1: input + botão -->
+              <div class="cg-search-input-wrap">
+                <i class="ri-search-line"></i>
+                <input type="text" placeholder="O que você quer fazer hoje?" />
+                <button class="btn1">Buscar</button>
+              </div>
+
+              <!-- Linha 2: filtros dropdown -->
+              <div class="cg-search-filters">
+                <div class="cg-filter">
+                  <button class="cg-filter-btn" aria-expanded="false">
+                    <span class="cg-filter-label">Tipo de Produto</span>
+                    <i class="ri-arrow-down-s-line"></i>
+                  </button>
+                  <ul class="cg-filter-dropdown" aria-hidden="true">
+                    <li data-reset>Todos</li>
+                    <li>Farinha de Trigo</li>
+                    <li>Farinha com Fermento</li>
+                    <li>Fermento em Pó</li>
+                  </ul>
+                </div>
+
+                <div class="cg-filter">
+                  <button class="cg-filter-btn" aria-expanded="false">
+                    <span class="cg-filter-label">Tipo de Receita</span>
+                    <i class="ri-arrow-down-s-line"></i>
+                  </button>
+                  <ul class="cg-filter-dropdown" aria-hidden="true">
+                    <li data-reset>Todas</li>
+                    <li>Bolos</li>
+                    <li>Pães</li>
+                    <li>Salgados</li>
+                    <li>Massas</li>
+                  </ul>
+                </div>
+
+                <div class="cg-filter">
+                  <button class="cg-filter-btn" aria-expanded="false">
+                    <span class="cg-filter-label">Ocasião</span>
+                    <i class="ri-arrow-down-s-line"></i>
+                  </button>
+                  <ul class="cg-filter-dropdown" aria-hidden="true">
+                    <li data-reset>Todas</li>
+                    <li>Café da manhã</li>
+                    <li>Festas e comemorações</li>
+                    <li>Dia a dia</li>
+                    <li>Fim de semana</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="inesquecivel">
+        <div class="inesquecivel-content container" data-parallax-content>
+          <span class="inesquecivel-badge"
+            >Entre o básico e o inesquecível</span
+          >
+          <p class="inesquecivel-texto">
+            Tem receita que resolve.<br />
+            Tem receita que surpreende.<br />
+            E tem aquelas que fazem os dois ao mesmo tempo.
+          </p>
+        </div>
+      </section>
+      <section class="cg-receitas-full row flex-center column align-center">
+        <div
+          class="cg-receitas-full-inner row column align-center col-4 col-4 col-6 container"
+        >
+          <div class="text-box-center">
+            <p>
+              <em>
+                Aqui, você encontra opções para todos os momentos: das mais
+                simples às que pedem um pouco mais de tempo, mas entregam muito
+                mais do que o esperado.
+              </em>
+            </p>
+          </div>
+
+          <div class="row receitas-container flex-center">
+            <!-- ── Linha 1 ── -->
+            <a
+              href="/receitas/bolo-de-coco"
+              class="receita-card bg-azul row column flex-left"
+            >
+              <img src="/img/bolo-de-coco.png" alt="Bolo de Coco" />
+              <h3>Bolo de Coco</h3>
+              <p>A Receita perfeita, macio e molhadinho</p>
+              <button class="btn3">
+                Ver receita <i class="ri-arrow-right-up-line"></i>
+              </button>
+            </a>
+
+            <a
+              href="/receitas/bolo-de-churros"
+              class="receita-card bg-azul row column flex-left"
+            >
+              <img
+                src="/img/bolo-de-churros.png"
+                alt="Bolo de Churros Invertido"
+              />
+              <h3>Bolo de Churros Invertido</h3>
+              <p>A melhor receita</p>
+              <button class="btn3">
+                Ver receita <i class="ri-arrow-right-up-line"></i>
+              </button>
+            </a>
+
+            <a
+              href="/receitas/bolo-de-baunilha"
+              class="receita-card bg-azul row column flex-left"
+            >
+              <img src="/img/bolo-de-baunilha.png" alt="Bolo de Baunilha" />
+              <h3>Bolo de Baunilha</h3>
+              <p>O melhor bolo de massa pronta da sua vida.</p>
+              <button class="btn3">
+                Ver receita <i class="ri-arrow-right-up-line"></i>
+              </button>
+            </a>
+
+            <!-- ── Linha 2 ── -->
+            <a
+              href="/receitas/empanado-perfeito"
+              class="receita-card bg-azul row column flex-left"
+            >
+              <img src="/img/empanado-perfeito.png" alt="Empanado Perfeito" />
+              <h3>Empanado Perfeito</h3>
+              <p>Mais saudável e realmente crocantes. Como fazer?</p>
+              <button class="btn3">
+                Ver receita <i class="ri-arrow-right-up-line"></i>
+              </button>
+            </a>
+
+            <a
+              href="/receitas/tiramisu"
+              class="receita-card bg-azul row column flex-left"
+            >
+              <img src="/img/tiramisu.png" alt="Tiramisu" />
+              <h3>Tiramisu</h3>
+              <p>Um clássico do jeito Globo.</p>
+              <button class="btn3">
+                Ver receita <i class="ri-arrow-right-up-line"></i>
+              </button>
+            </a>
+
+            <a
+              href="/receitas/tarte-de-maca"
+              class="receita-card bg-azul row column flex-left"
+            >
+              <img src="/img/tarte-de-maca.png" alt="Tartê de Maçã" />
+              <h3>Tartê de Maçã</h3>
+              <p>Até os erros, se bem feitos, são inesquecíveis.</p>
+              <button class="btn3">
+                Ver receita <i class="ri-arrow-right-up-line"></i>
+              </button>
+            </a>
+
+            <!-- ── Linha 3 ── -->
+            <a
+              href="/receitas/cookies-de-chocolate"
+              class="receita-card bg-azul row column flex-left"
+            >
+              <img
+                src="/img/coodies-chocolate.png"
+                alt="Cookies de Chocolate"
+              />
+              <h3>Cookies de Chocolate</h3>
+              <p>Clássico e Delicioso</p>
+              <button class="btn3">
+                Ver receita <i class="ri-arrow-right-up-line"></i>
+              </button>
+            </a>
+
+            <a
+              href="/receitas/manjar-de-coco"
+              class="receita-card bg-azul row column flex-left"
+            >
+              <img src="/img/manjar-de-coco.png" alt="Manjar de Coco" />
+              <h3>Manjar de Coco</h3>
+              <p>Um clássico intemporal.</p>
+              <button class="btn3">
+                Ver receita <i class="ri-arrow-right-up-line"></i>
+              </button>
+            </a>
+
+            <a
+              href="/receitas/corn-dog"
+              class="receita-card bg-azul row column flex-left"
+            >
+              <img src="/img/corn-dog.png" alt="Corn Dog" />
+              <h3>Corn Dog</h3>
+              <p>Dos domingos até sua mesa. Fácil de fazer.</p>
+              <button class="btn3">
+                Ver receita <i class="ri-arrow-right-up-line"></i>
+              </button>
+            </a>
+
+            <!-- ── Linha 4 ── -->
+            <a
+              href="/receitas/empanadas-classicas"
+              class="receita-card bg-azul row column flex-left"
+            >
+              <img
+                src="/img/empanadas-classicas.png"
+                alt="Empanadas Clássicas"
+              />
+              <h3>Empanadas Clássicas</h3>
+              <p>De carne, quem manda a tradição</p>
+              <button class="btn3">
+                Ver receita <i class="ri-arrow-right-up-line"></i>
+              </button>
+            </a>
+
+            <a
+              href="/receitas/pao-de-mel-recheado"
+              class="receita-card bg-azul row column flex-left"
+            >
+              <img src="/img/pao-de-mel.png" alt="Pão de Mel Recheado" />
+              <h3>Pão de Mel Recheado</h3>
+              <p>Fofoinho, versátil e muito gostoso</p>
+              <button class="btn3">
+                Ver receita <i class="ri-arrow-right-up-line"></i>
+              </button>
+            </a>
+
+            <a
+              href="/receitas/coxinha"
+              class="receita-card bg-azul row column flex-left"
+            >
+              <img src="/img/coxinha.png" alt="Coxinha" />
+              <h3>Coxinha</h3>
+              <p>Clássica &amp; Perfeita</p>
+              <button class="btn3">
+                Ver receita <i class="ri-arrow-right-up-line"></i>
+              </button>
+            </a>
+          </div>
+          <!-- /receitas-container -->
+
+          <!-- ── Paginação ── -->
+          <nav
+            class="cg-pagination row flex-center align-center"
+            aria-label="Páginas de receitas"
+          >
+            <button
+              class="cg-page-btn active"
+              aria-current="page"
+              aria-label="Página 1"
+            >
+              1
+            </button>
+            <button class="cg-page-btn" aria-label="Página 2">2</button>
+            <button class="cg-page-btn" aria-label="Página 3">3</button>
+            <button class="cg-page-btn" aria-label="Página 4">4</button>
+            <button class="cg-page-btn" aria-label="Página 5">5</button>
+          </nav>
+        </div>
+        <!-- /cg-receitas-full-inner -->
+      </section>
+      <section class="text2 row flex-center align-center">
+        <div class="container">
+            <img src="/img/lettering-v2 1.png" alt="">
+            <div class="text2-content container row column flex-center justify-center">
+              <h3>
+                Não é só sobre fazer!<br />
+              </h3>
+              <p>É sobre o que acontece enquanto você faz.
+            A conversa que surge. O cheiro que toma conta do ambiente.
+            <br />
+            <strong>
+                O tempo que desacelera sem você perceber.
+                No fim, a receita é só o começo.
+                O que fica mesmo… é o momento.
+            </strong>
+            </p>
+            </div>
+        </div>
+      </section>
+    </main>
+       <!-- ═══════════════════════════════════════
+         FOOTER
+    ═══════════════════════════════════════ -->
+    <footer class="cg-footer bg-creme row flex-center">
+      <div class="container col-4 col-6 col-10">
+        <img
+          class="logo-footer"
+          src="/svg/logotipo-globo-footer.svg"
+          alt="Cozinha Globo"
+        />
+
+        <div class="col1">
+          <h4><strong>Contato</strong></h4>
+          <p>(43) 3232.8000</p>
+          <p>Rua Senador Souza Naves, 1321</p>
+          <p>Sertanópolis | PR</p>
+          <p>Av. Me. Leônia Milito, 1377 sl 1605</p>
+          <p>Londrina | PR</p>
+          <a href="/contato"><h4>Envie sua receita</h4></a>
+          <a href="/contato"><h4>Envie seu Depoimento</h4></a>
+        </div>
+
+        <div class="col2">
+          <h4><strong>Menu</strong></h4>
+          <ul>
+            <li><a href="/produtos">Produtos</a></li>
+            <li><a href="/receitas">Receitas</a></li>
+            <li><a href="/onde-comprar">Onde Comprar</a></li>
+            <li><a href="/contato">Contato</a></li>
+            <li><a href="/clube">Clube</a></li>
+            <li><a href="/livros">Livros</a></li>
+            <li><a href="/trabalhe-conosco">Trabalhe Conosco</a></li>
+          </ul>
+        </div>
+
+        <div class="col3">
+          <a href="/contato#newsletter">
+            <button class="btn2">
+              Receba nossas receitas
+              <i class="ri-arrow-right-up-line"></i>
+            </button>
+          </a>
+          <div class="social-icons">
+            <a
+              href="https://www.facebook.com/cozinhaglobo"
+              target="_blank"
+              aria-label="Facebook"
+            >
+              <i class="ri-facebook-fill"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/cozinhaglobo/"
+              target="_blank"
+              aria-label="Instagram"
+            >
+              <i class="ri-instagram-line"></i>
+            </a>
+            <a
+              href="https://www.youtube.com/@cozinha_globo"
+              target="_blank"
+              aria-label="YouTube"
+            >
+              <i class="ri-youtube-fill"></i>
+            </a>
+            <a
+              href="https://www.tiktok.com/@cozinhaglobo"
+              target="_blank"
+              aria-label="TikTok"
+            >
+              <i class="ri-tiktok-fill"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/company/moinho-globo-alimentos-s-a/"
+              target="_blank"
+              aria-label="LinkedIn"
+            >
+              <i class="ri-linkedin-fill"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+      <script>
+        /* ─── Search filters JS ── adicionar em main.js ── */
+        document.querySelectorAll(".cg-filter").forEach((filter) => {
+          const btn = filter.querySelector(".cg-filter-btn");
+          const list = filter.querySelector(".cg-filter-dropdown");
+          const label = filter.querySelector(".cg-filter-label");
+          const defaultLabel = label.textContent;
+
+          btn.addEventListener("click", (e) => {
+            e.stopPropagation();
+            const isOpen = filter.classList.contains("is-open");
+            // fecha todos
+            document.querySelectorAll(".cg-filter.is-open").forEach((f) => {
+              f.classList.remove("is-open");
+              f.querySelector(".cg-filter-btn").setAttribute(
+                "aria-expanded",
+                "false",
+              );
+            });
+            if (!isOpen) {
+              filter.classList.add("is-open");
+              btn.setAttribute("aria-expanded", "true");
+            }
+          });
+
+          list.querySelectorAll("li").forEach((item) => {
+            item.addEventListener("click", () => {
+              const isReset = item.hasAttribute("data-reset");
+              label.textContent = isReset ? defaultLabel : item.textContent;
+              filter.classList.toggle("is-active", !isReset);
+              filter.classList.remove("is-open");
+              btn.setAttribute("aria-expanded", "false");
+            });
+          });
+        });
+
+        // fecha ao clicar fora
+        document.addEventListener("click", () => {
+          document.querySelectorAll(".cg-filter.is-open").forEach((f) => {
+            f.classList.remove("is-open");
+            f.querySelector(".cg-filter-btn").setAttribute(
+              "aria-expanded",
+              "false",
+            );
+          });
+        });
+      </script>
+      <script>
+        (function () {
+          function initParallax() {
+            if (
+              typeof gsap === "undefined" ||
+              typeof ScrollTrigger === "undefined"
+            )
+              return;
+            gsap.registerPlugin(ScrollTrigger);
+            function parallax(selector, fromY, toY, trigger) {
+              const el = document.querySelector(selector);
+              if (!el) return;
+              gsap.fromTo(
+                el,
+                { y: fromY },
+                {
+                  y: toY,
+                  ease: "none",
+                  scrollTrigger: {
+                    trigger: trigger || el,
+                    start: "top bottom",
+                    end: "bottom top",
+                    scrub: 1,
+                  },
+                },
+              );
+            }
+            parallax(".produtos-container", 20, -20, ".cg-main-wrapper");
+
+            parallax(".receitas-container", 20, -20, ".cg-receitas");
+
+            parallax(".cg-video iframe", 15, -15, ".cg-video");
+
+            parallax(".cg-depoimento", 10, -10, ".cg-depoimento");
+          }
+
+          if (document.readyState === "loading") {
+            document.addEventListener("DOMContentLoaded", initParallax);
+          } else {
+            requestAnimationFrame(initParallax);
+          }
+        })();
+      </script>
+      <script>
+        (function () {
+          function initHeroParallax() {
+            if (
+              typeof gsap === "undefined" ||
+              typeof ScrollTrigger === "undefined"
+            )
+              return;
+            gsap.registerPlugin(ScrollTrigger);
+
+            const hero = document.querySelector(".cg-hero");
+            const wrapper = document.querySelector(".cg-main-wrapper");
+            if (!hero) return;
+
+            if (wrapper) wrapper.style.overflow = "hidden";
+
+            gsap.to(hero, {
+              scale: 1.06,
+              duration: 5,
+              ease: "sine.inOut",
+              yoyo: true,
+              repeat: -1,
+              transformOrigin: "center center",
+            });
+
+            gsap.to(hero, {
+              backgroundPositionY: "65%",
+              ease: "none",
+              scrollTrigger: {
+                trigger: hero,
+                start: "top top",
+                end: "bottom top",
+                scrub: 1.5,
+              },
+            });
+          }
+
+          if (document.readyState === "loading") {
+            document.addEventListener("DOMContentLoaded", initHeroParallax);
+          } else {
+            requestAnimationFrame(initHeroParallax);
+          }
+        })();
+      </script>
+    </main>
+  </body>
+</html>

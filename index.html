@@ -48,28 +48,28 @@
           target="_blank"
           aria-label="Facebook"
         >
-          <img src="/svg/facebook.svg" alt="Facebook" />
+          <i class="ri-facebook-circle-fill"></i>
         </a>
         <a
           href="https://www.instagram.com/cozinhaglobo/"
           target="_blank"
           aria-label="Instagram"
         >
-          <img src="/svg/instagram.svg" alt="Instagram" />
+          <i class="ri-instagram-fill"></i>
         </a>
         <a
           href="https://www.youtube.com/@cozinha_globo"
           target="_blank"
           aria-label="YouTube"
         >
-          <img src="/svg/youtube.svg" alt="YouTube" />
+          <i class="ri-youtube-fill"></i>
         </a>
         <a
           href="https://www.tiktok.com/@cozinhaglobo"
           target="_blank"
           aria-label="TikTok"
         >
-          <img src="/svg/tiktok.svg" alt="TikTok" />
+          <i class="ri-tiktok-fill"></i>
         </a>
       </div>
 
@@ -403,7 +403,6 @@
           aproveitar melhor cada ingrediente, e ganhar mais confiança na
           cozinha.
         </p>
-        <!-- ★ NOVO: ícone de seta -->
         <button class="btn2">
           Inscreva-se no nosso canal do Youtube
           <i class="ri-arrow-right-up-line"></i>
@@ -581,22 +580,17 @@
           const wrapper = document.querySelector(".cg-main-wrapper");
           if (!hero) return;
 
-          /* Clipa o overflow do scale via JS (não toca no CSS) */
           if (wrapper) wrapper.style.overflow = "hidden";
 
-          /* ── Breathing: scale no próprio div — arrasta o bg junto ──
-         .cg-hero não tem filhos, então scale só afeta o background  */
           gsap.to(hero, {
             scale: 1.06,
             duration: 5,
             ease: "sine.inOut",
-            yoyo: true /* vai e volta suavemente      */,
-            repeat: -1 /* loop infinito               */,
+            yoyo: true,
+            repeat: -1,
             transformOrigin: "center center",
           });
 
-          /* ── Parallax no scroll: background desce mais devagar ──
-         Parte de center (50%) e vai até 65% enquanto a seção sai  */
           gsap.to(hero, {
             backgroundPositionY: "65%",
             ease: "none",
@@ -604,7 +598,7 @@
               trigger: hero,
               start: "top top",
               end: "bottom top",
-              scrub: 1.5 /* leve lag para sensação física */,
+              scrub: 1.5,
             },
           });
         }
