@@ -75,7 +75,7 @@
 
       <!-- Botão hamburguer -->
       <button class="ham" aria-label="Abrir menu" aria-expanded="false">
-        <i class="ri-menu-line"></i>
+        <img src="/svg/menu-icon.svg" alt="">
       </button>
     </header>
 
@@ -513,93 +513,50 @@
           });
         });
       </script>
-      <script>
-        (function () {
-          function initParallax() {
-            if (
-              typeof gsap === "undefined" ||
-              typeof ScrollTrigger === "undefined"
-            )
-              return;
-            gsap.registerPlugin(ScrollTrigger);
-            function parallax(selector, fromY, toY, trigger) {
-              const el = document.querySelector(selector);
-              if (!el) return;
-              gsap.fromTo(
-                el,
-                { y: fromY },
-                {
-                  y: toY,
-                  ease: "none",
-                  scrollTrigger: {
-                    trigger: trigger || el,
-                    start: "top bottom",
-                    end: "bottom top",
-                    scrub: 1,
-                  },
-                },
-              );
-            }
-            parallax(".produtos-container", 20, -20, ".cg-main-wrapper");
+     <script>
+      (function () {
+        function initHeroParallax() {
+          if (
+            typeof gsap === "undefined" ||
+            typeof ScrollTrigger === "undefined"
+          )
+            return;
+          gsap.registerPlugin(ScrollTrigger);
 
-            parallax(".receitas-container", 20, -20, ".cg-receitas");
+          const hero = document.querySelector(".cg-hero");
+          const wrapper = document.querySelector(".cg-main-wrapper");
+          if (!hero) return;
 
-            parallax(".cg-video iframe", 15, -15, ".cg-video");
+          if (hero) hero.style.overflow = "hidden";
 
-            parallax(".cg-depoimento", 10, -10, ".cg-depoimento");
-          }
+          gsap.to(hero, {
+            scale: 1.06,
+            duration: 5,
+            ease: "sine.inOut",
+            yoyo: true,
+            repeat: -1,
+            transformOrigin: "center center",
+          });
 
-          if (document.readyState === "loading") {
-            document.addEventListener("DOMContentLoaded", initParallax);
-          } else {
-            requestAnimationFrame(initParallax);
-          }
-        })();
-      </script>
-      <script>
-        (function () {
-          function initHeroParallax() {
-            if (
-              typeof gsap === "undefined" ||
-              typeof ScrollTrigger === "undefined"
-            )
-              return;
-            gsap.registerPlugin(ScrollTrigger);
+          gsap.to(hero, {
+            backgroundPositionY: "-40%",
+            ease: "none",
+            scrollTrigger: {
+              trigger: hero,
+              start: "top top",
+              end: "bottom top",
+              scrub: 1.5,
+            },
+          });
+        }
 
-            const hero = document.querySelector(".cg-hero");
-            const wrapper = document.querySelector(".cg-main-wrapper");
-            if (!hero) return;
-
-            if (wrapper) wrapper.style.overflow = "hidden";
-
-            gsap.to(hero, {
-              scale: 1.06,
-              duration: 5,
-              ease: "sine.inOut",
-              yoyo: true,
-              repeat: -1,
-              transformOrigin: "center center",
-            });
-
-            gsap.to(hero, {
-              backgroundPositionY: "65%",
-              ease: "none",
-              scrollTrigger: {
-                trigger: hero,
-                start: "top top",
-                end: "bottom top",
-                scrub: 1.5,
-              },
-            });
-          }
-
-          if (document.readyState === "loading") {
-            document.addEventListener("DOMContentLoaded", initHeroParallax);
-          } else {
-            requestAnimationFrame(initHeroParallax);
-          }
-        })();
-      </script>
+        if (document.readyState === "loading") {
+          document.addEventListener("DOMContentLoaded", initHeroParallax);
+        } else {
+          requestAnimationFrame(initHeroParallax);
+        }
+      })();
+    </script>
     </main>
   </body>
 </html>
