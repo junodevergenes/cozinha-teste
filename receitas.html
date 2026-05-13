@@ -75,7 +75,7 @@
 
       <!-- Botão hamburguer -->
       <button class="ham" aria-label="Abrir menu" aria-expanded="false">
-        <img src="/svg/menu-icon.svg" alt="">
+        <img src="/svg/menu-icon.svg" alt="" />
       </button>
     </header>
 
@@ -366,25 +366,25 @@
       </section>
       <section class="text2 row flex-center align-center">
         <div class="container">
-            <img src="/img/lettering-v2 1.png" alt="">
-            <div class="text2-content container row column flex-center justify-center">
-              <h3>
-                Não é só sobre fazer!<br />
-              </h3>
-              <p>É sobre o que acontece enquanto você faz.
-            A conversa que surge. O cheiro que toma conta do ambiente.
-            <br />
-            <strong>
-                O tempo que desacelera sem você perceber.
-                No fim, a receita é só o começo.
-                O que fica mesmo… é o momento.
-            </strong>
+          <img src="/img/lettering-v2 1.png" alt="" />
+          <div
+            class="text2-content container row column flex-center justify-center"
+          >
+            <h3>Não é só sobre fazer!<br /></h3>
+            <p>
+              É sobre o que acontece enquanto você faz. A conversa que surge. O
+              cheiro que toma conta do ambiente.
+              <br />
+              <strong>
+                O tempo que desacelera sem você perceber. No fim, a receita é só
+                o começo. O que fica mesmo… é o momento.
+              </strong>
             </p>
-            </div>
+          </div>
         </div>
       </section>
     </main>
-       <!-- ═══════════════════════════════════════
+    <!-- ═══════════════════════════════════════
          FOOTER
     ═══════════════════════════════════════ -->
     <footer class="cg-footer bg-creme row flex-center">
@@ -466,44 +466,18 @@
         </div>
       </div>
     </footer>
-      <script>
-        /* ─── Search filters JS ── adicionar em main.js ── */
-        document.querySelectorAll(".cg-filter").forEach((filter) => {
-          const btn = filter.querySelector(".cg-filter-btn");
-          const list = filter.querySelector(".cg-filter-dropdown");
-          const label = filter.querySelector(".cg-filter-label");
-          const defaultLabel = label.textContent;
+    <script>
+      /* ─── Search filters JS ── adicionar em main.js ── */
+      document.querySelectorAll(".cg-filter").forEach((filter) => {
+        const btn = filter.querySelector(".cg-filter-btn");
+        const list = filter.querySelector(".cg-filter-dropdown");
+        const label = filter.querySelector(".cg-filter-label");
+        const defaultLabel = label.textContent;
 
-          btn.addEventListener("click", (e) => {
-            e.stopPropagation();
-            const isOpen = filter.classList.contains("is-open");
-            // fecha todos
-            document.querySelectorAll(".cg-filter.is-open").forEach((f) => {
-              f.classList.remove("is-open");
-              f.querySelector(".cg-filter-btn").setAttribute(
-                "aria-expanded",
-                "false",
-              );
-            });
-            if (!isOpen) {
-              filter.classList.add("is-open");
-              btn.setAttribute("aria-expanded", "true");
-            }
-          });
-
-          list.querySelectorAll("li").forEach((item) => {
-            item.addEventListener("click", () => {
-              const isReset = item.hasAttribute("data-reset");
-              label.textContent = isReset ? defaultLabel : item.textContent;
-              filter.classList.toggle("is-active", !isReset);
-              filter.classList.remove("is-open");
-              btn.setAttribute("aria-expanded", "false");
-            });
-          });
-        });
-
-        // fecha ao clicar fora
-        document.addEventListener("click", () => {
+        btn.addEventListener("click", (e) => {
+          e.stopPropagation();
+          const isOpen = filter.classList.contains("is-open");
+          // fecha todos
           document.querySelectorAll(".cg-filter.is-open").forEach((f) => {
             f.classList.remove("is-open");
             f.querySelector(".cg-filter-btn").setAttribute(
@@ -511,9 +485,35 @@
               "false",
             );
           });
+          if (!isOpen) {
+            filter.classList.add("is-open");
+            btn.setAttribute("aria-expanded", "true");
+          }
         });
-      </script>
-     <script>
+
+        list.querySelectorAll("li").forEach((item) => {
+          item.addEventListener("click", () => {
+            const isReset = item.hasAttribute("data-reset");
+            label.textContent = isReset ? defaultLabel : item.textContent;
+            filter.classList.toggle("is-active", !isReset);
+            filter.classList.remove("is-open");
+            btn.setAttribute("aria-expanded", "false");
+          });
+        });
+      });
+
+      // fecha ao clicar fora
+      document.addEventListener("click", () => {
+        document.querySelectorAll(".cg-filter.is-open").forEach((f) => {
+          f.classList.remove("is-open");
+          f.querySelector(".cg-filter-btn").setAttribute(
+            "aria-expanded",
+            "false",
+          );
+        });
+      });
+    </script>
+    <script>
       (function () {
         function initHeroParallax() {
           if (
@@ -557,6 +557,5 @@
         }
       })();
     </script>
-    </main>
   </body>
 </html>
