@@ -18,13 +18,13 @@
 
       <nav id="menu-overlay-nav">
         <a href="/"                  class="mob-link">Início</a>
-        <a href="/produtos"          class="mob-link">Produtos</a>
-        <a href="/receitas"          class="mob-link">Receitas</a>
-        <a href="/onde-comprar"      class="mob-link">Onde Comprar</a>
-        <a href="/contato"           class="mob-link">Contato</a>
-        <a href="/clube"             class="mob-link">Clube</a>
-        <a href="/livros"            class="mob-link">Livros</a>
-        <a href="/trabalhe-conosco"  class="mob-link">Trabalhe Conosco</a>
+        <a href="/index.html#produtos"          class="mob-link">Produtos</a>
+        <a href="/receitas.html"          class="mob-link">Receitas</a>
+        <a href="/onde-comprar.html"      class="mob-link">Onde Comprar</a>
+        <a href="/contato.html"           class="mob-link">Contato</a>
+        <a href="/clube.html"             class="mob-link">Clube</a>
+        <a href="/livros.html"            class="mob-link">Livros</a>
+        <a href="/trabalhe-conosco.html"  class="mob-link">Trabalhe Conosco</a>
       </nav>
 
       <div id="menu-social">
