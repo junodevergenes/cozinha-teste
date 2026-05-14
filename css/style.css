@@ -909,6 +909,10 @@ header.bg-vermelho {
   color: var(--color02);
   overflow: hidden;
 }
+.cg-70-anos.laranja {
+  background-color: var(--color05);
+  padding-bottom: var(--spacing8);
+}
 
 .cg-70-anos > img {
   width: auto;
@@ -916,7 +920,9 @@ header.bg-vermelho {
   min-height: 600px;
   object-fit: contain;
 }
-
+.blue-text {
+  color: var(--color01);
+}
 .cg-70-anos .text-box-left {
   flex: 1;
   padding: var(--spacing8) var(--px-desktop);
@@ -2194,7 +2200,10 @@ header.bg-vermelho {
     min-height: 240px;
   }
 }
-
+.cg-contato {
+  background-color: var(--color01);
+  padding: var(--spacing8) var(--px-desktop);
+}
 /* Seção formulário */
 .cg-form-section {
   background: var(--color01);
