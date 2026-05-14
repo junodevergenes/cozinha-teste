@@ -1835,12 +1835,18 @@ header.bg-vermelho {
   padding: var(--spacing8) var(--px-desktop);
 }
 .text2 img {
-  width: 400px;
+  width: auto;
+  max-width: 490px;
+  height: auto;
+  flex-shrink: 0;
+  align-self: center;
 }
 .cg-hero.onde-comprar {
   background-image: url("/img/hero-onde-comprar.png");
 }
-
+.overflow-hidden {
+  overflow: hidden;
+}
 /* ─── Card de busca sobreposto ao hero ───────────────────── */
 .cg-busca-card {
   background: var(--color02);
