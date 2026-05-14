@@ -79,7 +79,7 @@
       </button>
     </header>
 
-    <main>
+    <main class="overflow-hidden">
       <!-- ═══════════════════════════════════════════════════════
      HERO
 ═══════════════════════════════════════════════════════ -->
@@ -365,10 +365,10 @@
         <!-- /cg-receitas-full-inner -->
       </section>
       <section class="text2 row flex-center align-center">
-        <div class="container">
+        <div class="container row flex-center align-center">
           <img src="/img/lettering-v2 1.png" alt="" />
           <div
-            class="text2-content container row column flex-center justify-center"
+            class="text2-content container row column flex-center justify-center col-4 col-6 col-8"
           >
             <h3>Não é só sobre fazer!<br /></h3>
             <p>
@@ -466,53 +466,13 @@
         </div>
       </div>
     </footer>
-    <script>
-      /* ─── Search filters JS ── adicionar em main.js ── */
-      document.querySelectorAll(".cg-filter").forEach((filter) => {
-        const btn = filter.querySelector(".cg-filter-btn");
-        const list = filter.querySelector(".cg-filter-dropdown");
-        const label = filter.querySelector(".cg-filter-label");
-        const defaultLabel = label.textContent;
+</footer> 
 
-        btn.addEventListener("click", (e) => {
-          e.stopPropagation();
-          const isOpen = filter.classList.contains("is-open");
-          // fecha todos
-          document.querySelectorAll(".cg-filter.is-open").forEach((f) => {
-            f.classList.remove("is-open");
-            f.querySelector(".cg-filter-btn").setAttribute(
-              "aria-expanded",
-              "false",
-            );
-          });
-          if (!isOpen) {
-            filter.classList.add("is-open");
-            btn.setAttribute("aria-expanded", "true");
-          }
-        });
-
-        list.querySelectorAll("li").forEach((item) => {
-          item.addEventListener("click", () => {
-            const isReset = item.hasAttribute("data-reset");
-            label.textContent = isReset ? defaultLabel : item.textContent;
-            filter.classList.toggle("is-active", !isReset);
-            filter.classList.remove("is-open");
-            btn.setAttribute("aria-expanded", "false");
-          });
-        });
-      });
-
-      // fecha ao clicar fora
-      document.addEventListener("click", () => {
-        document.querySelectorAll(".cg-filter.is-open").forEach((f) => {
-          f.classList.remove("is-open");
-          f.querySelector(".cg-filter-btn").setAttribute(
-            "aria-expanded",
-            "false",
-          );
-        });
-      });
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="/js/menu.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/hero-parallax.js"></script>
     <script>
       (function () {
         function initHeroParallax() {
