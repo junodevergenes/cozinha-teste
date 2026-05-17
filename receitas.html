@@ -35,9 +35,9 @@
           <a href="/receitas.html">Receitas</a>
           <a href="/onde-comprar.html">Onde Comprar</a>
           <a href="/contato.html">Contato</a>
-          <a href="/clube.html">Clube</a>
-          <a href="/livros.html">Livros</a>
-          <a href="/trabalhe-conosco.html">Trabalhe Conosco</a>
+          <a href="https://materiais.cozinhaglobo.com.br/clube-da-cozinha-globo" target="_blank" rel="noopener">Clube</a>
+          <a href="https://materiais.cozinhaglobo.com.br/cadastro-livros-receitas-globo?utm_source=site&utm_medium=cozinha-globo&utm_campaign=menu" target="_blank" rel="noopener">Livros</a>
+          <a href="https://vagas.moinhoglobo.com.br/" target="_blank" rel="noopener">Trabalhe Conosco</a>
         </ul>
       </nav>
 
@@ -120,9 +120,9 @@
                   </button>
                   <ul class="cg-filter-dropdown" aria-hidden="true">
                     <li data-reset>Todos</li>
-                    <li>Farinha de Trigo</li>
-                    <li>Farinha com Fermento</li>
-                    <li>Fermento em Pó</li>
+                    <li data-value="farinha-trigo">Farinha de Trigo</li>
+                    <li data-value="farinha-fermento">Farinha com Fermento</li>
+                    <li data-value="fermento">Fermento em Pó</li>
                   </ul>
                 </div>
 
@@ -133,10 +133,10 @@
                   </button>
                   <ul class="cg-filter-dropdown" aria-hidden="true">
                     <li data-reset>Todas</li>
-                    <li>Bolos</li>
-                    <li>Pães</li>
-                    <li>Salgados</li>
-                    <li>Massas</li>
+                    <li data-value="bolos">Bolos</li>
+                    <li data-value="paes">Pães</li>
+                    <li data-value="salgados">Salgados</li>
+                    <li data-value="massas">Massas</li>
                   </ul>
                 </div>
 
@@ -147,10 +147,10 @@
                   </button>
                   <ul class="cg-filter-dropdown" aria-hidden="true">
                     <li data-reset>Todas</li>
-                    <li>Café da manhã</li>
-                    <li>Festas e comemorações</li>
-                    <li>Dia a dia</li>
-                    <li>Fim de semana</li>
+                    <li data-value="cafe-manha">Café da manhã</li>
+                    <li data-value="festas">Festas e comemorações</li>
+                    <li data-value="dia-a-dia">Dia a dia</li>
+                    <li data-value="fim-de-semana">Fim de semana</li>
                   </ul>
                 </div>
               </div>
@@ -189,6 +189,9 @@
             <a
               href="/bolo-de-coco.html"
               class="receita-card bg-azul row column flex-left"
+              data-tipo-produto="farinha-trigo"
+              data-tipo-receita="bolos"
+              data-ocasiao="fim-de-semana"
             >
               <img src="/img/bolo-de-coco.png" alt="Bolo de Coco" />
               <h3>Bolo de Coco</h3>
@@ -201,6 +204,9 @@
             <a
               href="/bolo-de-churros.html"
               class="receita-card bg-azul row column flex-left"
+              data-tipo-produto="farinha-trigo"
+              data-tipo-receita="bolos"
+              data-ocasiao="festas"
             >
               <img
                 src="/img/bolo-de-churros.png"
@@ -216,6 +222,9 @@
             <a
               href="/bolo-de-baunilha.html"
               class="receita-card bg-azul row column flex-left"
+              data-tipo-produto="farinha-trigo"
+              data-tipo-receita="bolos"
+              data-ocasiao="fim-de-semana"
             >
               <img src="/img/bolo-de-baunilha.png" alt="Bolo de Baunilha" />
               <h3>Bolo de Baunilha</h3>
@@ -229,6 +238,9 @@
             <a
               href="/empanado-perfeito.html"
               class="receita-card bg-azul row column flex-left"
+              data-tipo-produto="farinha-fermento"
+              data-tipo-receita="salgados"
+              data-ocasiao="dia-a-dia"
             >
               <img src="/img/empanado-perfeito.png" alt="Empanado Perfeito" />
               <h3>Empanado Perfeito</h3>
@@ -241,6 +253,9 @@
             <a
               href="/receita.html"
               class="receita-card bg-azul row column flex-left"
+              data-tipo-produto="farinha-trigo"
+              data-tipo-receita="bolos"
+              data-ocasiao="festas"
             >
               <img src="/img/tiramisu.png" alt="Tiramisu" />
               <h3>Tiramisu</h3>
@@ -253,6 +268,9 @@
             <a
               href="/tarte-de-maca.html"
               class="receita-card bg-azul row column flex-left"
+              data-tipo-produto="farinha-trigo"
+              data-tipo-receita="massas"
+              data-ocasiao="fim-de-semana"
             >
               <img src="/img/tarte-de-maca.png" alt="Tartê de Maçã" />
               <h3>Tartê de Maçã</h3>
@@ -266,6 +284,9 @@
             <a
               href="/cookies-de-chocolate.html"
               class="receita-card bg-azul row column flex-left"
+              data-tipo-produto="farinha-trigo"
+              data-tipo-receita="bolos"
+              data-ocasiao="dia-a-dia"
             >
               <img
                 src="/img/coodies-chocolate.png"
@@ -281,6 +302,9 @@
             <a
               href="/manjar-de-coco.html"
               class="receita-card bg-azul row column flex-left"
+              data-tipo-produto="farinha-trigo"
+              data-tipo-receita="bolos"
+              data-ocasiao="festas"
             >
               <img src="/img/manjar-de-coco.png" alt="Manjar de Coco" />
               <h3>Manjar de Coco</h3>
@@ -293,6 +317,9 @@
             <a
               href="/corn-dog.html"
               class="receita-card bg-azul row column flex-left"
+              data-tipo-produto="farinha-trigo"
+              data-tipo-receita="salgados"
+              data-ocasiao="festas"
             >
               <img src="/img/corn-dog.png" alt="Corn Dog" />
               <h3>Corn Dog</h3>
@@ -306,6 +333,9 @@
             <a
               href="/empanadas-classicas.html"
               class="receita-card bg-azul row column flex-left"
+              data-tipo-produto="farinha-trigo"
+              data-tipo-receita="salgados"
+              data-ocasiao="festas"
             >
               <img
                 src="/img/empanadas-classicas.png"
@@ -321,6 +351,9 @@
             <a
               href="/pao-de-mel.html"
               class="receita-card bg-azul row column flex-left"
+              data-tipo-produto="farinha-trigo"
+              data-tipo-receita="bolos"
+              data-ocasiao="festas"
             >
               <img src="/img/pao-de-mel.png" alt="Pão de Mel Recheado" />
               <h3>Pão de Mel Recheado</h3>
@@ -333,6 +366,9 @@
             <a
               href="/coxinha.html"
               class="receita-card bg-azul row column flex-left"
+              data-tipo-produto="farinha-trigo"
+              data-tipo-receita="salgados"
+              data-ocasiao="festas"
             >
               <img src="/img/coxinha.png" alt="Coxinha" />
               <h3>Coxinha</h3>
@@ -341,6 +377,10 @@
                 Ver receita <i class="ri-arrow-right-up-line"></i>
               </button>
             </a>
+
+            <p class="cg-empty-state" style="display:none; width:100%; text-align:center; padding:40px 0; color:var(--color03); font-style:italic;">
+              Nenhuma receita encontrada para os filtros selecionados.
+            </p>
           </div>
           <!-- /receitas-container -->
 
@@ -402,25 +442,25 @@
           <p>Sertanópolis | PR</p>
           <p>Av. Me. Leônia Milito, 1377 sl 1605</p>
           <p>Londrina | PR</p>
-          <a href="/contato"><h4>Envie sua receita</h4></a>
-          <a href="/contato"><h4>Envie seu Depoimento</h4></a>
+          <a href="/enviar-receita.html"><h4>Envie sua receita</h4></a>
+          <a href="/enviar-depoimento.html"><h4>Envie seu Depoimento</h4></a>
         </div>
 
         <div class="col2">
           <h4><strong>Menu</strong></h4>
           <ul>
             <li><a href="/index.html#produtos">Produtos</a></li>
-            <li><a href="/receitas">Receitas</a></li>
-            <li><a href="/onde-comprar">Onde Comprar</a></li>
-            <li><a href="/contato">Contato</a></li>
-            <li><a href="/clube">Clube</a></li>
-            <li><a href="/livros">Livros</a></li>
-            <li><a href="/trabalhe-conosco">Trabalhe Conosco</a></li>
+            <li><a href="/receitas.html">Receitas</a></li>
+            <li><a href="/onde-comprar.html">Onde Comprar</a></li>
+            <li><a href="/contato.html">Contato</a></li>
+            <li><a href="https://materiais.cozinhaglobo.com.br/clube-da-cozinha-globo" target="_blank" rel="noopener">Clube</a></li>
+            <li><a href="https://materiais.cozinhaglobo.com.br/cadastro-livros-receitas-globo?utm_source=site&utm_medium=cozinha-globo&utm_campaign=menu" target="_blank" rel="noopener">Livros</a></li>
+            <li><a href="https://vagas.moinhoglobo.com.br/" target="_blank" rel="noopener">Trabalhe Conosco</a></li>
           </ul>
         </div>
 
         <div class="col3">
-          <a href="/contato#newsletter">
+          <a href="/contato.html#newsletter">
             <button class="btn2">
               Receba nossas receitas
               <i class="ri-arrow-right-up-line"></i>
@@ -517,5 +557,7 @@
         }
       })();
     </script>
+  <script src="/js/receitas-filter.js"></script>
+  <script type="text/javascript" async src="https://d335luupugsy2.cloudfront.net/js/loader-scripts/19061ac1-286f-424b-9bb6-dfd4067eef21-loader.js"></script>
   </body>
 </html>

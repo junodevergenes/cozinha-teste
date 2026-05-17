@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Envie sua Receita – Cozinha Globo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header class="row flex-center align-center bg-vermelho">
+      <div class="cg-logo-header">
+        <a href="/">
+          <img src="/svg/logotipo-globo-header.svg" alt="Cozinha Globo" />
+        </a>
+      </div>
+
+      <nav class="menu col-4 col-8 col-8 row">
+        <ul class="row flex-center gap-4">
+          <a href="/index.html#produtos">Produtos</a>
+          <a href="/receitas.html">Receitas</a>
+          <a href="/onde-comprar.html">Onde Comprar</a>
+          <a href="/contato.html">Contato</a>
+          <a href="https://materiais.cozinhaglobo.com.br/clube-da-cozinha-globo" target="_blank" rel="noopener">Clube</a>
+          <a href="https://materiais.cozinhaglobo.com.br/cadastro-livros-receitas-globo?utm_source=site&utm_medium=cozinha-globo&utm_campaign=menu" target="_blank" rel="noopener">Livros</a>
+          <a href="https://vagas.moinhoglobo.com.br/" target="_blank" rel="noopener">Trabalhe Conosco</a>
+        </ul>
+      </nav>
+
+      <div class="social-icons row col-2 col-2 col-2">
+        <a
+          href="https://www.facebook.com/cozinhaglobo"
+          target="_blank"
+          aria-label="Facebook"
+        >
+          <i class="ri-facebook-circle-fill"></i>
+        </a>
+        <a
+          href="https://www.instagram.com/cozinhaglobo/"
+          target="_blank"
+          aria-label="Instagram"
+        >
+          <i class="ri-instagram-fill"></i>
+        </a>
+        <a
+          href="https://www.youtube.com/@cozinha_globo"
+          target="_blank"
+          aria-label="YouTube"
+        >
+          <i class="ri-youtube-fill"></i>
+        </a>
+        <a
+          href="https://www.tiktok.com/@cozinhaglobo"
+          target="_blank"
+          aria-label="TikTok"
+        >
+          <i class="ri-tiktok-fill"></i>
+        </a>
+      </div>
+
+      <button class="ham" aria-label="Abrir menu" aria-expanded="false">
+        <img src="/svg/menu-icon.svg" alt="" />
+      </button>
+    </header>
+
+    <main>
+      <section class="cg-main-wrapper row column flex-center align-center">
+        <div class="cg-hero contato parallax-hero"></div>
+
+        <div
+          class="produtos-container menor row column col-4 col-6 col-8 flex-center align-center"
+        >
+          <div class="produtos-box row flex-center align-center">
+            <img
+              src="/img/lettering-v2 1.png"
+              alt="O ingrediente que conecta gerações"
+            />
+            <div class="text-box-left row column col-4 col-6 col-7">
+              <h2>Compartilhe sua receita com a gente</h2>
+              <p class="texto-escuro">
+                Toda boa receita merece ser contada — e nós adoramos ouvir as suas
+              </p>
+              <p class="texto-escuro">
+                <em
+                  ><strong>
+                    Envie sua receita preferida feita com os produtos Globo e inspire outras pessoas na cozinha.
+                  </strong></em
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="cg-contato row flex-center column align-center container-sm"
+      >
+        <div class="text-box-left texto-amarelo">
+          <h2>Envie sua receita</h2>
+        </div>
+
+        <div
+          class="row wrap justify-content align-center padding8"
+          style="gap: 24px"
+        >
+          <div class="cg-form-card col-4 col-6 col-6">
+            <form id="form-receita" action="https://formsubmit.io/send/mkt@moinhoglobo.com.br" method="POST" enctype="multipart/form-data">
+              <input type="hidden" name="_subject" value="Envio de Receita — Cozinha Globo" />
+              <input name="_formsubmit_id" type="text" style="display:none" />
+
+              <div class="cg-form-field">
+                <label for="nome">Seu Nome</label>
+                <input type="text" id="nome" name="nome" placeholder="Como você se chama?" required />
+              </div>
+
+              <div class="cg-form-field">
+                <label for="email">Seu E-mail</label>
+                <input type="email" id="email" name="email" placeholder="seu@email.com.br" required />
+              </div>
+
+              <div class="cg-form-field">
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" />
+              </div>
+
+              <div class="cg-form-field">
+                <label for="cidade">Cidade</label>
+                <input type="text" id="cidade" name="cidade" placeholder="Sua cidade" />
+              </div>
+
+              <div class="cg-form-field">
+                <label for="estado">Estado</label>
+                <select id="estado" name="estado">
+                  <option value="">Selecione seu estado</option>
+                  <option value="AC">Acre</option>
+                  <option value="AL">Alagoas</option>
+                  <option value="AP">Amapá</option>
+                  <option value="AM">Amazonas</option>
+                  <option value="BA">Bahia</option>
+                  <option value="CE">Ceará</option>
+                  <option value="DF">Distrito Federal</option>
+                  <option value="ES">Espírito Santo</option>
+                  <option value="GO">Goiás</option>
+                  <option value="MA">Maranhão</option>
+                  <option value="MT">Mato Grosso</option>
+                  <option value="MS">Mato Grosso do Sul</option>
+                  <option value="MG">Minas Gerais</option>
+                  <option value="PA">Pará</option>
+                  <option value="PB">Paraíba</option>
+                  <option value="PR">Paraná</option>
+                  <option value="PE">Pernambuco</option>
+                  <option value="PI">Piauí</option>
+                  <option value="RJ">Rio de Janeiro</option>
+                  <option value="RN">Rio Grande do Norte</option>
+                  <option value="RS">Rio Grande do Sul</option>
+                  <option value="RO">Rondônia</option>
+                  <option value="RR">Roraima</option>
+                  <option value="SC">Santa Catarina</option>
+                  <option value="SP">São Paulo</option>
+                  <option value="SE">Sergipe</option>
+                  <option value="TO">Tocantins</option>
+                </select>
+              </div>
+
+              <div class="cg-form-field">
+                <label for="nome-receita">Nome da Receita</label>
+                <input type="text" id="nome-receita" name="nome_receita" placeholder="Qual é o nome da sua receita?" required />
+              </div>
+
+              <div class="cg-form-field">
+                <label for="foto">Foto da Receita</label>
+                <input type="file" id="foto" name="foto" accept="image/*" />
+              </div>
+
+              <div class="cg-form-field">
+                <label for="mensagem">Conte sua receita</label>
+                <textarea
+                  id="mensagem"
+                  name="mensagem"
+                  placeholder="Descreva os ingredientes e o modo de preparo da sua receita"
+                  aria-label="Mensagem"
+                  required
+                ></textarea>
+              </div>
+
+              <div class="cg-form-field" style="flex-direction: row; align-items: flex-start; gap: 12px;">
+                <input type="checkbox" id="lgpd" name="lgpd" required style="margin-top: 4px; flex-shrink: 0;" />
+                <label for="lgpd" style="font-size: 0.85rem; cursor: pointer;">
+                  Concordo com a Política de Privacidade e autorizo o uso das informações fornecidas para contato pela Cozinha Globo.
+                </label>
+              </div>
+
+              <button class="btn4" type="submit">Envie sua Receita <i class="ri-arrow-right-up-line"></i></button>
+            </form>
+          </div>
+          <div class="texto-amarelo">
+            <p>
+              Tem uma receita especial que faz sucesso? <br />
+              Uma que veio da vovó ou que você criou do zero? <br />
+              <em>A gente quer conhecer a sua história.</em>
+            </p>
+            <h2>Porque toda receita <br />carrega uma memória!</h2>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="cg-footer bg-creme row flex-center">
+      <div class="container col-4 col-6 col-10">
+        <img
+          class="logo-footer"
+          src="/svg/logotipo-globo-footer.svg"
+          alt="Cozinha Globo"
+        />
+
+        <div class="col1">
+          <h4><strong>Contato</strong></h4>
+          <p>(43) 3232.8000</p>
+          <p>Rua Senador Souza Naves, 1321</p>
+          <p>Sertanópolis | PR</p>
+          <p>Av. Me. Leônia Milito, 1377 sl 1605</p>
+          <p>Londrina | PR</p>
+          <a href="/enviar-receita.html"><h4>Envie sua receita</h4></a>
+          <a href="/enviar-depoimento.html"><h4>Envie seu Depoimento</h4></a>
+        </div>
+
+        <div class="col2">
+          <h4><strong>Menu</strong></h4>
+          <ul>
+            <li><a href="/index.html#produtos">Produtos</a></li>
+            <li><a href="/receitas.html">Receitas</a></li>
+            <li><a href="/onde-comprar.html">Onde Comprar</a></li>
+            <li><a href="/contato.html">Contato</a></li>
+            <li><a href="https://materiais.cozinhaglobo.com.br/clube-da-cozinha-globo" target="_blank" rel="noopener">Clube</a></li>
+            <li><a href="https://materiais.cozinhaglobo.com.br/cadastro-livros-receitas-globo?utm_source=site&utm_medium=cozinha-globo&utm_campaign=menu" target="_blank" rel="noopener">Livros</a></li>
+            <li><a href="https://vagas.moinhoglobo.com.br/" target="_blank" rel="noopener">Trabalhe Conosco</a></li>
+          </ul>
+        </div>
+
+        <div class="col3">
+          <a href="/contato.html#newsletter">
+            <button class="btn2">Receba nossas receitas</button>
+          </a>
+          <div class="social-icons">
+            <a
+              href="https://www.facebook.com/cozinhaglobo"
+              target="_blank"
+              aria-label="Facebook"
+            >
+              <i class="ri-facebook-circle-fill"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/cozinhaglobo/"
+              target="_blank"
+              aria-label="Instagram"
+            >
+              <i class="ri-instagram-fill"></i>
+            </a>
+            <a
+              href="https://www.youtube.com/@cozinha_globo"
+              target="_blank"
+              aria-label="YouTube"
+            >
+              <i class="ri-youtube-fill"></i>
+            </a>
+            <a
+              href="https://www.tiktok.com/@cozinhaglobo"
+              target="_blank"
+              aria-label="TikTok"
+            >
+              <i class="ri-tiktok-fill"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="/js/menu.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/hero-parallax.js"></script>
+    <script src="/js/forms.js"></script>
+    <script>
+      (function () {
+        function initHeroParallax() {
+          if (
+            typeof gsap === "undefined" ||
+            typeof ScrollTrigger === "undefined"
+          )
+            return;
+          gsap.registerPlugin(ScrollTrigger);
+
+          const hero = document.querySelector(".cg-hero");
+          if (!hero) return;
+
+          if (hero) hero.style.overflow = "hidden";
+
+          gsap.to(hero, {
+            scale: 1.06,
+            duration: 5,
+            ease: "sine.inOut",
+            yoyo: true,
+            repeat: -1,
+            transformOrigin: "center center",
+          });
+
+          gsap.to(hero, {
+            backgroundPositionY: "40%",
+            ease: "none",
+            scrollTrigger: {
+              trigger: hero,
+              start: "top top",
+              end: "bottom top",
+              scrub: 1.5,
+            },
+          });
+        }
+
+        if (document.readyState === "loading") {
+          document.addEventListener("DOMContentLoaded", initHeroParallax);
+        } else {
+          requestAnimationFrame(initHeroParallax);
+        }
+      })();
+    </script>
+    <script type="text/javascript" async src="https://d335luupugsy2.cloudfront.net/js/loader-scripts/19061ac1-286f-424b-9bb6-dfd4067eef21-loader.js"></script>
+  </body>
+</html>
