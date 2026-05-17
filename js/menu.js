@@ -22,9 +22,9 @@
         <a href="/receitas.html"          class="mob-link">Receitas</a>
         <a href="/onde-comprar.html"      class="mob-link">Onde Comprar</a>
         <a href="/contato.html"           class="mob-link">Contato</a>
-        <a href="/clube.html"             class="mob-link">Clube</a>
-        <a href="/livros.html"            class="mob-link">Livros</a>
-        <a href="/trabalhe-conosco.html"  class="mob-link">Trabalhe Conosco</a>
+        <a href="https://materiais.cozinhaglobo.com.br/clube-da-cozinha-globo" target="_blank" rel="noopener" class="mob-link">Clube</a>
+        <a href="https://materiais.cozinhaglobo.com.br/cadastro-livros-receitas-globo?utm_source=site&utm_medium=cozinha-globo&utm_campaign=menu" target="_blank" rel="noopener" class="mob-link">Livros</a>
+        <a href="https://vagas.moinhoglobo.com.br/" target="_blank" rel="noopener" class="mob-link">Trabalhe Conosco</a>
       </nav>
 
       <div id="menu-social">
