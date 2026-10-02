@@ -1,0 +1,884 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <link rel="icon" type="image/png" href="/img/favicon.png" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cozinha Globo – O ingrediente que conecta gerações</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- ═══════════════════════════════════════
+         HEADER
+    ═══════════════════════════════════════ -->
+    <header class="row flex-center align-center">
+      <!-- Logo -->
+      <div class="cg-logo-header">
+        <a href="/index.html">
+          <img src="/svg/logotipo-globo-header.svg" alt="Cozinha Globo" />
+        </a>
+      </div>
+
+      <!-- Nav desktop -->
+      <nav class="menu col-4 col-8 col-8 row">
+        <ul class="row flex-center gap-4">
+          <a href="/index.html#produtos">Produtos</a>
+          <a href="/receitas.html">Receitas</a>
+          <a href="/onde-comprar.html">Onde Comprar</a>
+          <a href="/contato.html">Contato</a>
+          <a href="https://materiais.cozinhaglobo.com.br/clube-da-cozinha-globo" target="_blank" rel="noopener">Clube</a>
+          <a href="https://materiais.cozinhaglobo.com.br/cadastro-livros-receitas-globo?utm_source=site&utm_medium=cozinha-globo&utm_campaign=menu" target="_blank" rel="noopener">Livros</a>
+          <a href="https://vagas.moinhoglobo.com.br/" target="_blank" rel="noopener">Trabalhe Conosco</a>
+        </ul>
+      </nav>
+
+      <!-- Ícones sociais desktop -->
+      <div class="social-icons row col-2 col-2 col-2">
+        <a
+          href="https://www.facebook.com/cozinhaglobo"
+          target="_blank"
+          aria-label="Facebook"
+        >
+          <i class="ri-facebook-circle-fill"></i>
+        </a>
+        <a
+          href="https://www.instagram.com/cozinhaglobo/"
+          target="_blank"
+          aria-label="Instagram"
+        >
+          <i class="ri-instagram-fill"></i>
+        </a>
+        <a
+          href="https://www.youtube.com/@cozinha_globo"
+          target="_blank"
+          aria-label="YouTube"
+        >
+          <i class="ri-youtube-fill"></i>
+        </a>
+        <a
+          href="https://www.tiktok.com/@cozinhaglobo"
+          target="_blank"
+          aria-label="TikTok"
+        >
+          <i class="ri-tiktok-fill"></i>
+        </a>
+      </div>
+
+      <!-- Botão hamburguer -->
+      <button class="ham" aria-label="Abrir menu" aria-expanded="false">
+        <img src="/svg/menu-icon.svg" alt="" />
+      </button>
+    </header>
+
+    <main>
+      <!-- ═══════════════════════════════════════════════════════
+     HERO
+═══════════════════════════════════════════════════════ -->
+      <section class="cg-main-wrapper row column flex-center align-center">
+        <div class="cg-hero"></div>
+        <div
+          class="produtos-container row column col-4 col-6 col-8 flex-center align-center"
+        >
+          <div class="produtos-box row flex-center align-center">
+            <!-- <img
+              src="/img/lettering-v2 1.png"
+              alt="O ingrediente que conecta gerações"
+            /> -->
+            <div class="text-box-left row column col-4 col-6 col-7">
+              <h1>
+                O sabor você já conhece.<br />
+                <span>A história é você quem faz:</span> Agora!
+              </h1>
+              <h4>
+                Qualidade que acompanha você<br />
+                em cada momento que vale a pena viver.
+              </h4>
+            </div>
+          </div>
+        </div>
+        <!-- /produtos-container -->
+
+        <div class="cg-carrossel-wrapper" id="produtos">
+          <div class="produtos-carrossel row between-center align-center">
+            <button
+              class="cg-carousel-btn cg-carousel-prev"
+              aria-label="Anterior"
+            >
+              <img src="/svg/seta-esq.svg" alt="" aria-hidden="true" />
+            </button>
+
+            <div class="cg-carousel-viewport">
+              <div class="cg-carousel-track row no-wrap" id="cgTrack">
+                <a
+                  href="/globo-original.html"
+                  class="cg-produto-card row column"
+                  id="globo-original"
+                >
+                  <div class="cg-card-img row flex-center align-center">
+                    <img
+                      src="/produtos/globo-original.png"
+                      alt="Farinha de Trigo Globo Original"
+                    />
+                  </div>
+                  <div class="cg-produto-item row between-center align-center">
+                    <div class="column">
+                      <h4>Farinha de Trigo</h4>
+                      <p><em>Linha Clássica</em></p>
+                    </div>
+                    <span class="cg-card-btn" aria-label="Ver produto">
+                      <i class="ri-add-line"></i>
+                    </span>
+                  </div>
+                </a>
+
+
+
+                <a
+                  href="/globo-com-fermento.html"
+                  class="cg-produto-card row column"
+                  id="globo-com-fermento"
+                >
+                  <div class="cg-card-img row flex-center align-center">
+                    <img
+                      src="/produtos/globo-com-fermento.png"
+                      alt="Farinha de Trigo com Fermento"
+                    />
+                  </div>
+                  <div class="cg-produto-item row between-center align-center">
+                    <div class="column">
+                      <h4>Farinha de trigo</h4>
+                      <p><em>Linha com Fermento</em></p>
+                    </div>
+                    <span class="cg-card-btn" aria-label="Ver produto">
+                      <i class="ri-add-line"></i>
+                    </span>
+                  </div>
+                </a>
+
+                <a
+                  href="/globo-superiore.html"
+                  class="cg-produto-card row column"
+                  id="globo-superiore"
+                >
+                  <div class="cg-card-img row flex-center align-center">
+                    <img
+                      src="/produtos/globo-superiore.png"
+                      alt="Farinha de Trigo Superiore"
+                    />
+                  </div>
+                  <div class="cg-produto-item row between-center align-center">
+                    <div class="column">
+                      <h4>Farinha de trigo</h4>
+                      <p><em>Linha Superiore</em></p>
+                    </div>
+                    <span class="cg-card-btn" aria-label="Ver produto">
+                      <i class="ri-add-line"></i>
+                    </span>
+                  </div>
+                </a>
+
+                <a
+                  href="/globo-fermento-quimico.html"
+                  class="cg-produto-card row column"
+                  id="globo-fermento-quimico"
+                >
+                  <div class="cg-card-img row flex-center align-center">
+                    <img
+                      src="/produtos/globo-fermento-quimico.png"
+                      alt="Fermento em Pó Globo"
+                    />
+                  </div>
+                  <div class="cg-produto-item row between-center align-center">
+                    <div class="column">
+                      <h4>Fermento em pó</h4>
+                      <p><em>Linha Clássica</em></p>
+                    </div>
+                    <span class="cg-card-btn" aria-label="Ver produto">
+                      <i class="ri-add-line"></i>
+                    </span>
+                  </div>
+                </a>
+
+                <a href="/acucar-cristal.html" class="cg-produto-card row column" id="acucar-cristal">
+                  <div class="cg-card-img row flex-center align-center">
+                    <img src="/produtos/cristal.png" alt="Açúcar Cristal Globo" />
+                  </div>
+                  <div class="cg-produto-item row between-center align-center">
+                    <div class="column">
+                      <h4>Açúcar Cristal Globo</h4>
+                      <p><em>Linha Tradicional</em></p>
+                    </div>
+                    <span class="cg-card-btn" aria-label="Ver produto"><i class="ri-add-line"></i></span>
+                  </div>
+                </a>
+
+                <a href="/acucar-extra-fino.html" class="cg-produto-card row column" id="acucar-extra-fino">
+                  <div class="cg-card-img row flex-center align-center">
+                    <img src="/produtos/extrafino.png" alt="Açúcar Extra Fino" />
+                  </div>
+                  <div class="cg-produto-item row between-center align-center">
+                    <div class="column">
+                      <h4>Açúcar Extra Fino</h4>
+                      <p><em>Linha Tradicional</em></p>
+                    </div>
+                    <span class="cg-card-btn" aria-label="Ver produto"><i class="ri-add-line"></i></span>
+                  </div>
+                </a>
+
+                <a href="/acucar-refinado.html" class="cg-produto-card row column" id="acucar-refinado">
+                  <div class="cg-card-img row flex-center align-center">
+                    <img src="/produtos/refinado.png" alt="Açúcar Refinado" />
+                  </div>
+                  <div class="cg-produto-item row between-center align-center">
+                    <div class="column">
+                      <h4>Açúcar Refinado</h4>
+                      <p><em>Linha Tradicional</em></p>
+                    </div>
+                    <span class="cg-card-btn" aria-label="Ver produto"><i class="ri-add-line"></i></span>
+                  </div>
+                </a>
+
+                <a href="/acucar-demerara.html" class="cg-produto-card row column" id="acucar-demerara">
+                  <div class="cg-card-img row flex-center align-center">
+                    <img src="/produtos/demerara.png" alt="Açúcar Demerara" />
+                  </div>
+                  <div class="cg-produto-item row between-center align-center">
+                    <div class="column">
+                      <h4>Açúcar Demerara</h4>
+                      <p><em>Linha Tradicional</em></p>
+                    </div>
+                    <span class="cg-card-btn" aria-label="Ver produto"><i class="ri-add-line"></i></span>
+                  </div>
+                </a>
+
+                <a href="/acucar-mascavo.html" class="cg-produto-card row column" id="acucar-mascavo">
+                  <div class="cg-card-img row flex-center align-center">
+                    <img src="/produtos/mascavo%201.png" alt="Açúcar Mascavo" />
+                  </div>
+                  <div class="cg-produto-item row between-center align-center">
+                    <div class="column">
+                      <h4>Açúcar Mascavo</h4>
+                      <p><em>Linha Tradicional</em></p>
+                    </div>
+                    <span class="cg-card-btn" aria-label="Ver produto"><i class="ri-add-line"></i></span>
+                  </div>
+                </a>
+                <a
+                  href="/globo-original-profissional.html"
+                  class="cg-produto-card row column"
+                  id="globo-original-profissional"
+                >
+                  <div class="cg-card-img row flex-center align-center">
+                    <img
+                      src="/produtos/globo-original-profissional.png"
+                      alt="Farinha de Trigo Globo Original Profissional 25 kg"
+                    />
+                  </div>
+                  <div class="cg-produto-item row between-center align-center">
+                    <div class="column">
+                      <h4>Farinha de Trigo</h4>
+                      <p><em>Linha Profissional · 25 kg</em></p>
+                    </div>
+                    <span class="cg-card-btn" aria-label="Ver produto">
+                      <i class="ri-add-line"></i>
+                    </span>
+                  </div>
+                </a>
+
+                <a
+                  href="/globomix-pao-frances-profissional.html"
+                  class="cg-produto-card row column"
+                  id="globomix-pao-frances-profissional"
+                >
+                  <div class="cg-card-img row flex-center align-center">
+                    <img
+                      src="/produtos/globomix-pao-frances.png"
+                      alt="Globomix Pão Francês Profissional 25 kg"
+                    />
+                  </div>
+                  <div class="cg-produto-item row between-center align-center">
+                    <div class="column">
+                      <h4>Globomix Pão Francês</h4>
+                      <p><em>Linha Profissional · 25 kg</em></p>
+                    </div>
+                    <span class="cg-card-btn" aria-label="Ver produto">
+                      <i class="ri-add-line"></i>
+                    </span>
+                  </div>
+                </a>
+
+                <a
+                  href="/globo-ouro-profissional.html"
+                  class="cg-produto-card row column"
+                  id="globo-ouro-profissional"
+                >
+                  <div class="cg-card-img row flex-center align-center">
+                    <img
+                      src="/produtos/ouro-profissional.png"
+                      alt="Farinha de Trigo Globo Ouro Profissional 25 kg"
+                    />
+                  </div>
+                  <div class="cg-produto-item row between-center align-center">
+                    <div class="column">
+                      <h4>Globo Ouro</h4>
+                      <p><em>Linha Profissional · 25 kg</em></p>
+                    </div>
+                    <span class="cg-card-btn" aria-label="Ver produto">
+                      <i class="ri-add-line"></i>
+                    </span>
+                  </div>
+                </a>
+
+                <a
+                  href="/globomix-ouro-profissional.html"
+                  class="cg-produto-card row column"
+                  id="globomix-ouro-profissional"
+                >
+                  <div class="cg-card-img row flex-center align-center">
+                    <img
+                      src="/produtos/globomix-ouro.png"
+                      alt="Globomix Ouro Profissional 25 kg"
+                    />
+                  </div>
+                  <div class="cg-produto-item row between-center align-center">
+                    <div class="column">
+                      <h4>Globomix Ouro</h4>
+                      <p><em>Linha Profissional · 25 kg</em></p>
+                    </div>
+                    <span class="cg-card-btn" aria-label="Ver produto">
+                      <i class="ri-add-line"></i>
+                    </span>
+                  </div>
+                </a>
+
+                <a
+                  href="/superiore-panificacao-profissional.html"
+                  class="cg-produto-card row column"
+                  id="superiore-panificacao-profissional"
+                >
+                  <div class="cg-card-img row flex-center align-center">
+                    <img
+                      src="/produtos/superiore-panificacao.png"
+                      alt="Farinha de Trigo Superiore Panificação Profissional 25 kg"
+                    />
+                  </div>
+                  <div class="cg-produto-item row between-center align-center">
+                    <div class="column">
+                      <h4>Superiore Panificação</h4>
+                      <p><em>Linha Profissional · 25 kg</em></p>
+                    </div>
+                    <span class="cg-card-btn" aria-label="Ver produto">
+                      <i class="ri-add-line"></i>
+                    </span>
+                  </div>
+                </a>
+
+                <a
+                  href="/superiore-mais-paes-profissional.html"
+                  class="cg-produto-card row column"
+                  id="superiore-mais-paes-profissional"
+                >
+                  <div class="cg-card-img row flex-center align-center">
+                    <img
+                      src="/produtos/superiore-paes.png"
+                      alt="Superiore +Pães Profissional 25 kg"
+                    />
+                  </div>
+                  <div class="cg-produto-item row between-center align-center">
+                    <div class="column">
+                      <h4>Superiore +Pães</h4>
+                      <p><em>Linha Profissional · 25 kg</em></p>
+                    </div>
+                    <span class="cg-card-btn" aria-label="Ver produto">
+                      <i class="ri-add-line"></i>
+                    </span>
+                  </div>
+                </a>
+
+                <a
+                  href="/superiore-profissional.html"
+                  class="cg-produto-card row column"
+                  id="superiore-profissional"
+                >
+                  <div class="cg-card-img row flex-center align-center">
+                    <img
+                      src="/produtos/superiore-profissional.png"
+                      alt="Farinha de Trigo Superiore Profissional 25 kg"
+                    />
+                  </div>
+                  <div class="cg-produto-item row between-center align-center">
+                    <div class="column">
+                      <h4>Superiore</h4>
+                      <p><em>Linha Profissional · 25 kg</em></p>
+                    </div>
+                    <span class="cg-card-btn" aria-label="Ver produto">
+                      <i class="ri-add-line"></i>
+                    </span>
+                  </div>
+                </a>
+              </div>
+              <!-- /cgTrack -->
+            </div>
+            <!-- /cg-carousel-viewport -->
+
+            <button
+              class="cg-carousel-btn cg-carousel-next"
+              aria-label="Próximo"
+            >
+              <img src="/svg/seta-dir.svg" alt="" aria-hidden="true" />
+            </button>
+          </div>
+
+          <div
+            class="cg-carousel-dots row flex-center"
+            id="cgDots"
+            role="tablist"
+          ></div>
+        </div>
+        <!-- /cg-carrossel-wrapper -->
+      </section>
+
+      <!-- ═══════════════════════════════════════
+           MEMÓRIA
+      ═══════════════════════════════════════ -->
+      <section class="cg-memoria row flex-center align-center">
+        <div class="container flex-left">
+          <div class="text-box-left col-4 col-4 col-5">
+            <h2>
+              Começa com uma receita.<br />
+              Termina em memória.
+            </h2>
+            <p>
+              Qualidade, praticidade e aquele toque de afeto que transforma
+              receitas em momentos inesquecíveis.
+            </p>
+            <a href="/receitas.html">
+              <button class="btn1">
+                Aprenda receitas para surpreender
+                <i class="ri-arrow-right-up-line"></i>
+              </button>
+            </a>
+          </div>
+          <img
+            src="/img/memorias-secao3.png"
+            alt="Memórias"
+            class="col-4 col-6 col-4"
+          />
+        </div>
+      </section>
+      <section
+        class="cg-70-anos row col-4 col-8 col-12 flex-center align-center"
+      >
+        <img src="/img/70anos-sec4.png" alt="70 Anos" />
+        <div class="text-box-left column col-4 col-4 col-6">
+          <h2>
+            Há mais de 70 anos na cozinha.<br />
+            Agora, também no seu jeito de viver.
+          </h2>
+          <p class="texto-amarelo">
+            Nossa história começou dentro da cozinha, e hoje faz parte dos
+            momentos que você cria. Ao longo de mais de sete décadas, evoluímos
+            junto com os brasileiros, ampliando nosso portfólio para acompanhar
+            diferentes formas de cozinhar.
+          </p>
+          <p class="texto-amarelo">
+            A gente evoluiu, ampliou, inovou.<br />
+            Mas fizemos questão de manter o essencial:<br />
+            A qualidade, cuidado e respeito por cada receita.
+          </p>
+          <p>
+            Porque no fim, não é só sobre cozinhar.<br />
+            <strong>É sobre viver isso com quem importa.</strong>
+          </p>
+          <!-- <a href="https://materiais.cozinhaglobo.com.br/clube-da-cozinha-globo" target="_blank" rel="noopener">
+            <button class="btn2">
+              Faça parte do Clube Cozinha Globo
+              <i class="ri-arrow-right-up-line"></i>
+            </button>
+          </a> -->
+        </div>
+      </section>
+
+      <!-- ═══════════════════════════════════════
+           HISTÓRIA / REELS
+      ═══════════════════════════════════════ -->
+      <section class="cg-historia row flex-center align-center">
+        <div class="cg-historia-texto text-box-left">
+          <h2>Antes de qualquer receita,<br />existe uma história.</h2>
+          <p class="texto-amarelo">O ingrediente que conecta gerações</p>
+          <p>
+            <strong>Algumas receitas não foram escritas.</strong><br />
+            Foram passadas no olhar, no cheiro que<br />
+            vem da cozinha,<br />
+            na ponta do dedo que prova antes de<br />
+            assar.
+          </p>
+          <p>
+            Porque cozinhar <strong>nunca foi só sobre<br />
+            comida.</strong><br />
+            <strong>Foi sobre estar junto.</strong><br />
+            Sobre aprender com quem veio antes,<br />
+            e ensinar sem nem perceber.
+          </p>
+          <p>
+            O que conecta as gerações não está só <strong>no<br />
+            caderno manchado de farinha.</strong><br />
+            Está na história contada entre uma<br />
+            colherada e outra.<br />
+            <strong>Na música que toca enquanto o pão assa.</strong><br />
+            No valor que se aprende em silêncio,<br />
+            observando.<br />
+            <strong>Na experiência vivida em volta da mesa e<br />
+            nunca esquecida.</strong>
+          </p>
+          <p>
+            <strong>Cada receita é um retrato.</strong><br />
+            De quem éramos, de quem somos, de<br />
+            quem estamos formando.
+          </p>
+          <p>
+            E se tem um ingrediente que resiste ao<br />
+            tempo,<br />
+            é aquele que carrega mais do que sabor:<br />
+            carrega memória, afeto e pertencimento.
+          </p>
+          <p class="texto-amarelo">
+            <strong>Cozinha Globo.</strong><br />
+            <strong>O ingrediente que conecta gerações.</strong>
+          </p>
+        </div>
+        <div class="cg-historia-reels">
+          <div class="cg-reels-carousel">
+            <button class="cg-carousel-btn cg-reels-prev" aria-label="Reels anteriores">
+              <img src="/svg/seta-esq.svg" alt="" aria-hidden="true" />
+            </button>
+            <div class="cg-reels-viewport">
+              <div class="cg-reels-grid">
+                <div class="cg-reel-card" role="button" tabindex="0" aria-label="Reproduzir vídeo 1" data-src="https://www.instagram.com/p/DYKbW6MpFUr/embed/">
+                  <img class="cg-reel-thumb" src="/img/reel1thumb.jpg" alt="" loading="lazy" />
+                </div>
+                <div class="cg-reel-card" role="button" tabindex="0" aria-label="Reproduzir vídeo 2" data-src="https://www.instagram.com/p/DXH3dcPjRtv/embed/">
+                  <img class="cg-reel-thumb" src="/img/reel2thumb.jpg" alt="" loading="lazy" />
+                </div>
+                <div class="cg-reel-card" role="button" tabindex="0" aria-label="Reproduzir vídeo 3" data-src="https://www.instagram.com/p/DX99mVYzDae/embed/">
+                  <img class="cg-reel-thumb" src="/img/reel3thumb.jpg" alt="" loading="lazy" />
+                </div>
+                <div class="cg-reel-card" role="button" tabindex="0" aria-label="Reproduzir vídeo 4" data-src="https://www.instagram.com/p/DWoi9obhgly/embed/">
+                  <img class="cg-reel-thumb" src="/img/reel4thumb.jpg" alt="" loading="lazy" />
+                </div>
+                <div class="cg-reel-card" role="button" tabindex="0" aria-label="Reproduzir vídeo 5" data-src="https://www.instagram.com/p/DV__8GKE6Nz/embed/">
+                  <img class="cg-reel-thumb" src="/img/reel5thumb.jpg" alt="" loading="lazy" />
+                </div>
+                <div class="cg-reel-card" role="button" tabindex="0" aria-label="Reproduzir vídeo 6" data-src="https://www.instagram.com/reel/DNBOcg1MjN-/embed/">
+                  <img class="cg-reel-thumb" src="/img/reel6thumb.jpeg" alt="" loading="lazy" />
+                </div>
+              </div>
+            </div>
+            <button class="cg-carousel-btn cg-reels-next" aria-label="Próximos reels">
+              <img src="/svg/seta-dir.svg" alt="" aria-hidden="true" />
+            </button>
+          </div>
+          <div class="cg-carousel-dots cg-reels-dots row flex-center" role="tablist" aria-label="Navegação dos reels"></div>
+        </div>
+      </section>
+
+      <!-- ═══════════════════════════════════════
+           RECEITAS
+      ═══════════════════════════════════════ -->
+      <section class="cg-receitas row flex-center column align-center">
+        <h2>Receitas pra impressionar e marcar momentos</h2>
+        <div class="row receitas-container flex-center">
+          <a
+            href="/receitas/bolo-de-coco"
+            class="receita-card row column flex-left"
+          >
+            <img src="/img/bolo-de-coco.png" alt="Bolo de Coco" />
+            <h3>Bolo de Coco</h3>
+            <p>A receita perfeita, macio e molhadinho</p>
+            <button class="btn3">
+              Ver Receita <i class="ri-arrow-right-up-line"></i>
+            </button>
+          </a>
+          <a
+            href="/receitas/bolo-de-churros"
+            class="receita-card row column flex-left"
+          >
+            <img src="/img/bolo-de-churros.png" alt="Bolo de Churros" />
+            <h3>Bolo de Churros</h3>
+            <p>A melhor receita</p>
+            <button class="btn3">
+              Ver Receita <i class="ri-arrow-right-up-line"></i>
+            </button>
+          </a>
+          <a
+            href="/receitas/bolo-de-baunilha"
+            class="receita-card row column flex-left"
+          >
+            <img src="/img/bolo-de-baunilha.png" alt="Bolo de Baunilha" />
+            <h3>Bolo de Baunilha</h3>
+            <p>O melhor bolo de massa pronta da sua vida.</p>
+            <button class="btn3">
+              Ver Receita <i class="ri-arrow-right-up-line"></i>
+            </button>
+          </a>
+        </div>
+        <a href="/receitas.html">
+          <button class="btn3">
+            Ver todas as receitas
+            <i class="ri-arrow-right-up-line"></i>
+          </button>
+        </a>
+      </section>
+
+      <!-- ═══════════════════════════════════════
+           VÍDEO / CLUBE
+      ═══════════════════════════════════════ -->
+      <section class="cg-video row flex-center column align-center">
+        <h2>Um espaço pra quem quer ir além da receita</h2>
+        <iframe
+          src="https://www.youtube.com/embed/ySgwto2vcX8?si=0IOB7B8HcLLFXRqF"
+          title="YouTube video player"
+          frameborder="0"
+          allow="
+            accelerometer;
+            autoplay;
+            clipboard-write;
+            encrypted-media;
+            gyroscope;
+            picture-in-picture;
+            web-share;
+          "
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+        <p class="texto-amarelo">
+          Dicas culinárias, receitas passo a passo e técnicas simples para você
+          aproveitar melhor cada ingrediente, e ganhar mais confiança na
+          cozinha.
+        </p>
+        <a href="https://www.youtube.com/@cozinha_globo" target="_blank" rel="noopener">
+          <button class="btn2">
+            Inscreva-se no nosso canal do Youtube
+            <i class="ri-arrow-right-up-line"></i>
+          </button>
+        </a>
+      </section>
+
+      <!-- ═══════════════════════════════════════
+           DEPOIMENTO
+      ═══════════════════════════════════════ -->
+      <section class="cg-depoimento row flex-center align-center column">
+        <p><em>Presente nas receitas e nas histórias de quem entende</em></p>
+        <p>
+          <strong
+            ><em
+              >Por que a farinha de trigo Globo faz parte de tantas
+              cozinhas?</em
+            ></strong
+          >
+        </p>
+        <h2>
+          <em
+            ><strong>
+              "Em quase todas as nossas receitas usamos farinha de trigo Globo.
+              É um dos ingredientes mais importantes e a marca entrega qualidade
+              e consistência em cada preparo."
+            </strong></em
+          >
+        </h2>
+        <p><em>Tradicional Bolos Caseiros</em></p>
+      </section>
+    </main>
+
+    <!-- ═══════════════════════════════════════
+         FOOTER
+    ═══════════════════════════════════════ -->
+    <footer class="cg-footer row flex-center">
+      <div class="container col-4 col-6 col-10">
+        <img
+          class="logo-footer"
+          src="/svg/logotipo-globo-footer.svg"
+          alt="Cozinha Globo"
+        />
+
+        <div class="col1">
+          <h4><strong>Contato</strong></h4>
+          <p>(43) 3232.8000</p>
+          <p>Rua Senador Souza Naves, 1321</p>
+          <p>Sertanópolis | PR</p>
+          <p>Av. Me. Leônia Milito, 1377 sl 1605</p>
+          <p>Londrina | PR</p>
+          <a href="/enviar-receita.html"><h4>Envie sua receita</h4></a>
+          <a href="/enviar-depoimento.html"><h4>Envie seu Depoimento</h4></a>
+        </div>
+
+        <div class="col2">
+          <h4><strong>Menu</strong></h4>
+          <ul>
+            <li><a href="/index.html#produtos">Produtos</a></li>
+            <li><a href="/receitas.html">Receitas</a></li>
+            <li><a href="/onde-comprar.html">Onde Comprar</a></li>
+            <li><a href="/contato.html">Contato</a></li>
+            <li><a href="https://materiais.cozinhaglobo.com.br/clube-da-cozinha-globo" target="_blank" rel="noopener">Clube</a></li>
+            <li><a href="https://materiais.cozinhaglobo.com.br/cadastro-livros-receitas-globo?utm_source=site&utm_medium=cozinha-globo&utm_campaign=menu" target="_blank" rel="noopener">Livros</a></li>
+            <li><a href="https://vagas.moinhoglobo.com.br/" target="_blank" rel="noopener">Trabalhe Conosco</a></li>
+          </ul>
+        </div>
+
+        <div class="col3">
+          <a href="/contato.html#newsletter">
+            <button class="btn2">
+              Receba nossas receitas
+              <i class="ri-arrow-right-up-line"></i>
+            </button>
+          </a>
+          <div class="social-icons">
+            <a
+              href="https://www.facebook.com/cozinhaglobo"
+              target="_blank"
+              aria-label="Facebook"
+            >
+              <i class="ri-facebook-fill"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/cozinhaglobo/"
+              target="_blank"
+              aria-label="Instagram"
+            >
+              <i class="ri-instagram-line"></i>
+            </a>
+            <a
+              href="https://www.youtube.com/@cozinha_globo"
+              target="_blank"
+              aria-label="YouTube"
+            >
+              <i class="ri-youtube-fill"></i>
+            </a>
+            <a
+              href="https://www.tiktok.com/@cozinhaglobo"
+              target="_blank"
+              aria-label="TikTok"
+            >
+              <i class="ri-tiktok-fill"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/company/moinho-globo-alimentos-s-a/"
+              target="_blank"
+              aria-label="LinkedIn"
+            >
+              <i class="ri-linkedin-fill"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="/js/menu.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/carousel.js"></script>
+    <script src="/js/hero-parallax.js"></script>
+    <script src="/js/reels.js"></script>
+    <script>
+      (function () {
+        function initParallax() {
+          if (
+            typeof gsap === "undefined" ||
+            typeof ScrollTrigger === "undefined"
+          )
+            return;
+          gsap.registerPlugin(ScrollTrigger);
+          function parallax(selector, fromY, toY, trigger) {
+            const el = document.querySelector(selector);
+            if (!el) return;
+            gsap.fromTo(
+              el,
+              { y: fromY },
+              {
+                y: toY,
+                ease: "none",
+                scrollTrigger: {
+                  trigger: trigger || el,
+                  start: "top bottom",
+                  end: "bottom top",
+                  scrub: 1,
+                },
+              },
+            );
+          }
+          parallax(".produtos-container", 20, -20, ".cg-main-wrapper");
+
+          parallax(".receitas-container", 20, -20, ".cg-receitas");
+
+          parallax(".cg-video iframe", 15, -15, ".cg-video");
+
+          parallax(".cg-depoimento", 10, -10, ".cg-depoimento");
+        }
+
+        if (document.readyState === "loading") {
+          document.addEventListener("DOMContentLoaded", initParallax);
+        } else {
+          requestAnimationFrame(initParallax);
+        }
+      })();
+    </script>
+    <script>
+      (function () {
+        function initHeroParallax() {
+          if (
+            typeof gsap === "undefined" ||
+            typeof ScrollTrigger === "undefined"
+          )
+            return;
+          gsap.registerPlugin(ScrollTrigger);
+
+          const hero = document.querySelector(".cg-hero");
+          const wrapper = document.querySelector(".cg-main-wrapper");
+          if (!hero) return;
+
+          if (wrapper) wrapper.style.overflow = "hidden";
+
+          gsap.to(hero, {
+            scale: 1.06,
+            duration: 5,
+            ease: "sine.inOut",
+            yoyo: true,
+            repeat: -1,
+            transformOrigin: "center center",
+          });
+
+          gsap.to(hero, {
+            backgroundPositionY: "65%",
+            ease: "none",
+            scrollTrigger: {
+              trigger: hero,
+              start: "top top",
+              end: "bottom top",
+              scrub: 1.5,
+            },
+          });
+        }
+
+        if (document.readyState === "loading") {
+          document.addEventListener("DOMContentLoaded", initHeroParallax);
+        } else {
+          requestAnimationFrame(initHeroParallax);
+        }
+      })();
+    </script>
+  <script type="text/javascript" async src="https://d335luupugsy2.cloudfront.net/js/loader-scripts/19061ac1-286f-424b-9bb6-dfd4067eef21-loader.js"></script>
+  </body>
+</html>
